@@ -1,43 +1,27 @@
 package by.htp.model;
 
+import java.util.Random;
+
 public class PrivatPlane extends Plane {
-	
-	public PrivatPlane(String planeName, int planeSpeed, int planeCost, int rangeOfFlight) {
-		super(planeName, planeSpeed, planeCost, rangeOfFlight);
-		// TODO Auto-generated constructor stub
+
+	private int countOfSeats;
+
+	public PrivatPlane(String planeName) {
+		Random rand = new Random();
+		setPlaneName(planeName);
+		setPlaneSpeed(rand.nextInt(1000));
+		setPlaneCost(999000);
+		setFuelCapacity(rand.nextInt(3000));
+		setRangeOfFlight(rand.nextInt(6000));
+		setCountOfSeats(rand.nextInt(20));
 	}
-	
-	public String planeName;
-	public int planeSpeed;
-	public int planeCost;
-	public int rangeOfFlight;
-	
-	public String getPlaneName() {
-		return planeName;
+
+	public int getCountOfSeats() {
+		return countOfSeats;
 	}
-	public void setPlaneName(String planeName) {
-		this.planeName = planeName;
+
+	public void setCountOfSeats(int countOfSeats) {
+		this.countOfSeats = countOfSeats;
 	}
-	public int getPlaneSpeed() {
-		return planeSpeed;
-	}
-	public void setPlaneSpeed(int planeSpeed) {
-		this.planeSpeed = planeSpeed;
-	}
-	public int getPlaneCost() {
-		return super.planeCost;
-	}
-	public void setPlaneCost(int planeCost) {
-		this.planeCost = planeCost;
-	}
-	public int getRangeOfFlight() {
-		return rangeOfFlight;
-	}
-	public void setRangeOfFlight(int rangeOfFlight) {
-		this.rangeOfFlight = rangeOfFlight;
-	}
-	
-	
-	
 
 }

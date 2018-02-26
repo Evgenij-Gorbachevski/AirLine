@@ -2,16 +2,18 @@ package by.htp.model;
 
 public class Plane {
 
-	public String planeName;
-	public int planeSpeed;
-	public int planeCost;
-	public int rangeOfFlight;
+	private String planeName;
+	private int planeSpeed;
+	private int planeCost;
+	private int rangeOfFlight;
+	private int fuelCapacity;
 	
-	public Plane(String planeName, int planeSpeed, int planeCost, int rangeOfFlight ) {
-		this.planeName = planeName;
-		this.planeSpeed = planeSpeed;
-		this.planeCost = planeCost;
-		this.rangeOfFlight = rangeOfFlight;
+	public int getFuelCapacity() {
+		return fuelCapacity;
+	}
+
+	public void setFuelCapacity(int fuelCapacity) {
+		this.fuelCapacity = fuelCapacity;
 	}
 
 	public String getPlaneName() {
