@@ -86,16 +86,21 @@ public class AirLine {
 
 	public void airLineSearch() {
 		int a = 5000;
+		int a1 = 0;
 		int b = 6000;
 		if (planes != null) {
 			for (Plane plane : planes) {
 				if (plane != null) {
 					if (plane.getRangeOfFlight() >= a && plane.getRangeOfFlight() <= b) {
 						System.out.println("Searching Plane madel: " + plane.getPlaneName());
+						a1++;
 					}
 				}
 
 			}
+		}
+		if(a1 == 0) {
+			System.out.println("Sorry, we don't have searching planes.");
 		}
 
 	}
