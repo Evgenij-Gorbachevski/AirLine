@@ -7,6 +7,8 @@ public class Plane {
 	private int planeCost;
 	private int rangeOfFlight;
 	private int fuelCapacity;
+	private int countOfSeats;
+	private int carrying;
 	
 	public int getFuelCapacity() {
 		return fuelCapacity;
@@ -46,6 +48,22 @@ public class Plane {
 
 	public void setRangeOfFlight(int rangeOfFlight) {
 		this.rangeOfFlight = rangeOfFlight;
+	}
+
+	public int getCountOfSeats() {
+		return countOfSeats;
+	}
+
+	public void setCountOfSeats(int countOfSeats) {
+		this.countOfSeats = countOfSeats;
+	}
+
+	public int getCarrying() {
+		return carrying;
+	}
+
+	public void setCarrying(int carrying) {
+		this.carrying = carrying;
 	}
 
 }
