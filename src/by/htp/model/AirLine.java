@@ -99,9 +99,10 @@ public class AirLine {
 
 			}
 		}
-		if(a1 == 0) {
+		if (a1 == 0) {
 			System.out.println("Sorry, we don't have searching planes.");
 		}
 
 	}
+
 }
